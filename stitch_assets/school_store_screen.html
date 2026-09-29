@@ -1,0 +1,346 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>St. Teresa School Store | ShopMyUniform</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#cee5ff",
+                        "secondary-fixed-dim": "#ffb59f",
+                        "surface-tint": "#49607c",
+                        "primary-container": "#102a43",
+                        "primary": "#00152a",
+                        "tertiary-fixed": "#dfe3e7",
+                        "inverse-surface": "#16334a",
+                        "inverse-primary": "#b0c9e8",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#b0c9e8",
+                        "on-surface-variant": "#43474d",
+                        "surface": "#f7f9ff",
+                        "primary-fixed": "#d1e4ff",
+                        "on-primary": "#ffffff",
+                        "secondary": "#ab2e00",
+                        "secondary-fixed": "#ffdbd1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#011d35",
+                        "tertiary": "#101517",
+                        "tertiary-container": "#24292c",
+                        "surface-container-highest": "#cee5ff",
+                        "surface-container": "#e3efff",
+                        "on-tertiary-fixed": "#171c1f",
+                        "on-tertiary-container": "#8b9094",
+                        "on-background": "#001d32",
+                        "surface-container-low": "#edf4ff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#7a92b0",
+                        "surface-bright": "#f7f9ff",
+                        "secondary-container": "#d63c00",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#314863",
+                        "outline": "#74777e",
+                        "on-surface": "#001d32",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#3b0a00",
+                        "on-secondary-fixed-variant": "#862200",
+                        "tertiary-fixed-dim": "#c3c7cb",
+                        "background": "#f7f9ff",
+                        "surface-container-high": "#d8eaff",
+                        "outline-variant": "#c3c6ce",
+                        "on-tertiary-fixed-variant": "#43474b",
+                        "surface-dim": "#c1ddfb",
+                        "on-secondary-container": "#fffbff",
+                        "inverse-on-surface": "#e8f2ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "16px",
+                        "section-padding": "80px",
+                        "stack-md": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-sm": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0px 4px 20px rgba(16, 42, 67, 0.08);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar (Shared Component) -->
+<header class="sticky top-0 z-50 shadow-sm bg-surface-lowest">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_mall</span>
+                shopmyuniform
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-gutter">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Shop</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-label-md text-label-md" href="{{DATA:SCREEN:SCREEN_62}}">Schools</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="{{DATA:SCREEN:SCREEN_62}}">Corporate</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="{{DATA:SCREEN:SCREEN_62}}">Healthcare</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="{{DATA:SCREEN:SCREEN_62}}">Hospitality</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="{{DATA:SCREEN:SCREEN_62}}">Industrial</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4 text-primary">
+<button aria-label="Search" class="hover:text-secondary transition-colors duration-200">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="Account" class="hover:text-secondary transition-colors duration-200">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button aria-label="Cart" class="hover:text-secondary transition-colors duration-200 relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-2 bg-secondary text-on-secondary text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- School Hero Banner -->
+<section class="relative w-full overflow-hidden bg-primary-container">
+<!-- Background Image Reference -->
+<div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmrBNTzCch-tNaYxArjXABAJcylRPkJ5pJtOXWjZOzbCvn9c13F2M2fFs-gz8_q3zYG3QIBiMUD-D0-ucFtAKhcoSM5LOQ-NrI6JKv9gh73qZqxm5ZQnaMO52fL7fNFlb6dkSItjLsYJPZLH7Fob1VjO5bs5LM18nnAj-9WWRQRNYdgkb9QVKuY83jnZYgYsVk1t6ReUq9gXWDk3LzICWjKVC3kPxWtfyRRT0ALzmWFIxO8z64z5c194ydiuQsakc0WtXaDcIZugkt');"></div>
+<!-- Content Container -->
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center py-8 md:py-12">
+<!-- School Logo & Branding Placeholder -->
+<div class="w-16 h-16 md:w-20 md:h-20 bg-surface rounded-full p-1 mb-3 shadow-sm flex items-center justify-center">
+<div class="w-full h-full rounded-full border-2 border-outline-variant flex items-center justify-center bg-surface-container text-primary-container">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-on-primary text-3xl md:text-headline-lg mb-2">
+                     St. Teresa School
+                 </h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mb-6">
+                     Official uniform store for the 2024-2025 Academic Session. Shop required attire, sportswear, and accessories.
+                 </p>
+<!-- Banner Alert -->
+<div class="glass-panel border border-surface-variant/30 rounded-lg px-6 py-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">campaign</span>
+<span class="font-label-md text-label-md text-on-primary">Pre-order for Fall Semester ends August 15th.</span>
+</div>
+</div>
+</section>
+<!-- Main Grid Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-8">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Browse by Grade</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Primary -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1 border border-outline-variant/20" href="#">
+<div class="h-40 w-full bg-surface-container-high relative overflow-hidden">
+<img alt="Primary School Uniforms" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw2B1i-SZpuVcztxpl9qTbD89CfXzYRtrQcrgtI9Fd3jwSMtkWGBVPGRRHZ4i1-9wx7J4Hacfa5iz_7869Mr30BEMmOnEm0d-QP-B3f0e23wEeSkh-0kVdqbFCWuaLiPhQUK-5LvgnXVhZTRM3zs6fazYcCFW87osyEECoiuCfSSGtb_WOjJYCj5JblrbUKTACm6gTCNStOGCRhm5OBGg3ItWqgt1stG60sndQsblX4P_CO-sZow6R_g">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-4 flex items-center justify-between bg-surface-lowest">
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">Primary</h3>
+<p class="text-label-sm text-on-surface-variant">Classes 1-5</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Middle -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1 border border-outline-variant/20" href="#">
+<div class="h-40 w-full bg-surface-container-high relative overflow-hidden">
+<img alt="Middle School Uniforms" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv0n677tK1r_ZwQA9pEJgbozMejcZqrAZJ6ZD5ddU9PFGAv3WHnnwtofAszKSo9qTQnBFCN0Gvw6jdqfOIl2xV8aZUuKSi8vtGS1s3PaFUbtlhrLpDx_4mpguDCKN_d6Yw1O7AlBWx3CpeCo5yCYrwASzvwW05bKeud5nXijkweTJdUu7y4p0wv6ArdVQvx6OEEZLCsbuNOyDyUTXhphytXcYRq9F0CsFW6NJbM4P_VZ8p_C7ujK2uSA">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-4 flex items-center justify-between bg-surface-lowest">
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">Middle</h3>
+<p class="text-label-sm text-on-surface-variant">Classes 6-7</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Senior -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1 border border-outline-variant/20" href="#">
+<div class="h-40 w-full bg-surface-container-high relative overflow-hidden">
+<img alt="Senior School Uniforms" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRqlBAMrEM3YUmsG68kvbNW4lBsKc3iqWrSfer1gmmVwNVnvnAVeL0nCtyUhquufnYnRhPDUGvB3_6-QOfQ_pVtoErC5UFD4Tfue8_XkTz1RiVUBVjW0gq03hcZJyX0ZnbMmncLcCX0VOPyWzNDHYnLY7el37_JPM31TWqIvnmFbpeEjWnXzILMXyT9KnlSPZU8hEZEBJuwC51KQxqbSPu_01NxwQ_yWcVTtQWCno4X51meq63ZPlxFw">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-4 flex items-center justify-between bg-surface-lowest">
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">Senior</h3>
+<p class="text-label-sm text-on-surface-variant">Classes 8-10</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</section><section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Shop by Category</h2>
+<a class="font-label-md text-label-md text-secondary hover:text-secondary-container flex items-center gap-1 group transition-colors" href="#">
+                    View All Categories <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Full Uniform Kit Bundle (Featured - Spans 2 rows on desktop) -->
+<a class="group relative md:row-span-2 rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1" href="#">
+<div class="absolute top-4 left-4 z-20 bg-secondary text-on-secondary font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider">
+                        Save 15%
+                    </div>
+<div class="aspect-square md:aspect-auto md:h-[60%] w-full bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A clean, highly detailed flat-lay photograph of a complete school uniform set for St. Teresa School. The set includes a crisp white button-down shirt, a navy blue blazer, a pleated plaid skirt, and a matching striped tie. The lighting is bright and even, casting soft shadows against a pure white background to highlight the texture and quality of the fabrics. The aesthetic is premium, neat, and organized." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTQW2OIaZ-kLwFLMMWdKM2VE9bzlalD3fN2sNWPj0iaCIlzELHFBuw9pC2acH8fIRB5dzrNXk_5daCwyxCC__Er5WqRh-2WLcMcJGjeGHV3rBLeF9hvxReyKDKwmi9cchwTO7eDLpCu2MWfWUeqlW09aeBouc1FnemZKiw5WCkU0vUy_hIpG2jla_2dGI8YPrpaLUFJPTHLFl6uVb9XBn5Wc5vrx9V8kvvHBdQN4-t0I3FChtJhij7NWUAV0xGq3rcg8rRfBef5X3B">
+</div>
+<div class="p-6 md:h-[40%] flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Full Uniform Kit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Complete set includes blazer, shirts, bottoms, and ties. The easiest way to get ready for the new year.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary">From $199</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+</a>
+<!-- Boys Category -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1" href="#">
+<div class="h-48 w-full bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A brightly lit, professional product photo of a boy's school uniform polo shirt in navy blue, neatly folded. Beside it rests a pair of khaki trousers. The lighting creates a modern, clean light-mode aesthetic with soft ambient depth. The background is a subtle cool gray to make the navy blue pop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoBA_4JPxKgHF8aAvI6Q6elxNmrwRad1WNLuhuW2iY8ey0GR-jATG_AliipD7rJUpRW2Dfz885K-9BgjHF6-zkgr5aWeDxwpLo0dpNrsTHFs_9JMUkR5q-mIwq7CReXzINHkjBZtRoRO1dRdbC35wCsVAAQqJOwS-YZPyf8XMI53DYfe8AojBXey7IHnTg-Zs612VDWh1DD_EbGq3MVVYOYgEWO-R_MK5WbqXV8bHvrvryi38jTSuD2snIW0zDS6vUachn2D3CTpH0">
+</div>
+<div class="p-4 flex items-center justify-between">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">Boys Uniforms</h3>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</div>
+</a>
+<!-- Girls Category -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1" href="#">
+<div class="h-48 w-full bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A premium close-up studio shot of a girl's school uniform blouse with a Peter Pan collar, paired with a classic navy blue cardigan. The fabrics look soft yet durable. The lighting is high-key and flattering, casting gentle shadows on a pristine white backdrop. Professional e-commerce style photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO9FOF0AaJnnaEvO8YnF6OUT5s-p3qDXYFXDbUQgZQCPw8PHSuSieWkgZHJ08c6o0ERRBo_1TnD0ssrUURB8U3ALP4mkF4NpZDwhw1tpt7o83eCvUVC5wLkfsrgv7owfwGT_spbcxcMykRuR9uWgBa27FwzlsQ_zlQvtuJrlmFJ8lvy98Iyh1y0ujm68-Ul_NbkQWCtxsKPcHBmobsu_xk2qYGg-FFHlry9HSVYcGrfD2OI_wz5rFL7I9dhNgqeCoVY7xO7yKCMlxc">
+</div>
+<div class="p-4 flex items-center justify-between">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">Girls Uniforms</h3>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</div>
+</a>
+<!-- Sportswear Category -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1" href="#">
+<div class="h-48 w-full bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dynamic flat-lay photography of school physical education apparel. A breathable grey t-shirt with a navy blue trim and matching athletic shorts are arranged neatly. A pair of white sport socks sits nearby. High contrast lighting highlights the athletic fabric texture against a bright, neutral light-mode background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQXC_UBKnU5wJAZver6FbramO_Wv_QFxfXGMfv6zfanPIbD8YgmKIsp2I43rBh9YFW4QeydwI0C8-tJala_UBSZd1zlTH6FdwiQASOpXDAwWoatHOn5clxVXheeSVTGpj4iPkDHhX-qTFsZEsn_haUkHhi9I3ngy67A9x-yBQ_vuo5GHp460TSO-JM8x9NikPpC1FbyD62yoh3nQV7718GscMF136R81AY10UrnL2n6eeRBrq9HISU1EptmrFviOJ4vwgpkxo5wHpv">
+</div>
+<div class="p-4 flex items-center justify-between">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">P.E. &amp; Sportswear</h3>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</div>
+</a>
+<!-- Accessories Category -->
+<a class="group relative rounded-xl overflow-hidden soft-shadow bg-surface-lowest block transition-transform duration-300 hover:-translate-y-1" href="#">
+<div class="h-48 w-full bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant arrangement of school uniform accessories. A striped navy and orange tie, a leather belt with a simple silver buckle, and a dark blue knee-high sock. The items are styled diagonally across the frame on a soft white surface. The lighting is crisp and modern, perfect for a high-end institutional store." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjkeSFjA8TQ5nBKgeQkSkrQBTmKTREs_RkVJ9qWasOZXFWyeoWAtjYivGAddV52xLNE8IxNNonPprKpWXYFiZrmboMRJqzRz2Gtb2sj3pQ3dvFKWsyzNbgAfMxlUUWVlzIyStwWL2uyQ5vdTTGAl3ksDpQW2kqdkXwB_SQUiAzb4WkG9m_JckWB3YXI9Mxa1IiEWuUUlOSBc8grJvH8VqQL0y5MPA4GFv3ejbYQrUFTYDb9f3X6aebEV9sahJpDLBggX-_2adY542p">
+</div>
+<div class="p-4 flex items-center justify-between">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wide">Accessories</h3>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low border-t border-outline-variant mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<div class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_mall</span>
+                    shopmyuniform
+                </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Your trusted partner for institutional apparel and professional uniforms.
+                </p>
+<div class="mt-4 font-body-sm text-body-sm text-on-surface-variant">
+                    © 2024 ShopMyUniform. All rights reserved.
+                </div>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Shop</h4>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">All Products</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">New Arrivals</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Best Sellers</a>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Business</h4>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Bulk Orders</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Vendor Registration</a>
+</div>
+<!-- Links Column 3 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Support</h4>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Track Order</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+</body></html>

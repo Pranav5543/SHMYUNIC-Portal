@@ -1,0 +1,17 @@
+# Node build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Debug logs
+*.log
+
+# OS Metadata
+.DS_Store
